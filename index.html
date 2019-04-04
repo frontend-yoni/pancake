@@ -1,165 +1,162 @@
 <html style="width:100%;height:100%;">
 
 <title>Pancake Finance - Take a bite.</title>
-<meta content="/public/favicon.png" itemprop="image">
-<link href="/public/favicon.ico" rel="shortcut icon">
-
-<link rel="stylesheet" type="text/css" href="public/mainStyle.css">
+<link rel="stylesheet" type="text/css" href="src/public/mainStyle.css">
 
 <script>
 
 </script>
 
 <!-- build:js public/providers.js -->
-<script src="jQuery.min.js"></script>
-<script src="d3.min.js" charset="utf-8"></script>
+<script src="src/jQuery.min.js"></script>
+<script src="src/d3.min.js" charset="utf-8"></script>
 <!-- endbuild -->
 
 <!-- build:js public/pikachu.js -->
-<script src="data/staticData.js"></script>
-<script src="data/restAPIs.js"></script>
-<script src="data/globalData.js"></script>
-<script src="data/userDataObject.js"></script>
-<script src="data/stockData.js"></script>
-<script src="data/dataManager.js"></script>
+<script src="src/data/staticData.js"></script>
+<script src="src/data/restAPIs.js"></script>
+<script src="src/data/globalData.js"></script>
+<script src="src/data/userDataObject.js"></script>
+<script src="src/data/stockData.js"></script>
+<script src="src/data/dataManager.js"></script>
 
-<script src="data/winston/mock.js"></script>
-<script src="data/winston/mockManager.js"></script>
-<script src="data/winston/statsMock.js"></script>
-<script src="data/winston/newsMock.js"></script>
-<script src="fakeData.js"></script>
+<script src="src/data/winston/mock.js"></script>
+<script src="src/data/winston/mockManager.js"></script>
+<script src="src/data/winston/statsMock.js"></script>
+<script src="src/data/winston/newsMock.js"></script>
+<script src="src/fakeData.js"></script>
 
-<script src="funGrid/stockList/listEntryDragService.js"></script>
+<script src="src/funGrid/stockList/listEntryDragService.js"></script>
 
-<script src="funGrid/util/usefulUIService.js"></script>
-<script src="data/cardDataObject.js"></script>
-<script src="funGrid/funGrid.js"></script>
+<script src="src/funGrid/util/usefulUIService.js"></script>
+<script src="src/data/cardDataObject.js"></script>
+<script src="src/funGrid/funGrid.js"></script>
 
-<script src="funGrid/stockList/stockList.js"></script>
-<script src="funGrid/stockList/stockListHoverCard.js"></script>
-<script src="funGrid/stockList/stockListContainer.js"></script>
-<script src="funGrid/stockList/addEntryUtil.js"></script>
-<script src="funGrid/mainView.js"></script>
+<script src="src/funGrid/stockList/stockList.js"></script>
+<script src="src/funGrid/stockList/stockListHoverCard.js"></script>
+<script src="src/funGrid/stockList/stockListContainer.js"></script>
+<script src="src/funGrid/stockList/addEntryUtil.js"></script>
+<script src="src/funGrid/mainView.js"></script>
 
-<script src="funGrid/util/resizeUtil.js"></script>
-<script src="funGrid/util/dragAndDropUtil.js"></script>
-<script src="funGrid/util/cardPositionUtil.js"></script>
-<script src="funGrid/util/animateCardUtil.js"></script>
-<script src="funGrid/gridCard.js"></script>
+<script src="src/funGrid/util/resizeUtil.js"></script>
+<script src="src/funGrid/util/dragAndDropUtil.js"></script>
+<script src="src/funGrid/util/cardPositionUtil.js"></script>
+<script src="src/funGrid/util/animateCardUtil.js"></script>
+<script src="src/funGrid/gridCard.js"></script>
 
-<script src="funGrid/mainTitle/extraStuffComponent.js"></script>
-<script src="funGrid/mainTitle/loginComponent.js"></script>
-<script src="funGrid/mainTitle/titleSortComponent.js"></script>
-<script src="funGrid/mainTitle/aboutUsComponent.js"></script>
-<script src="funGrid/mainTitle/mainTitle.js"></script>
-<script src="funGrid/mainTitle/indexDataComponent.js"></script>
-<script src="funGrid/mainTitle/cardAction/universalCardsActionWindow.js"></script>
-<script src="funGrid/mainTitle/cardAction/universalCardSizeSection.js"></script>
-<script src="funGrid/mainTitle/cardAction/universalSortSection.js"></script>
-<script src="funGrid/mainTitle/cardAction/universalRangeSection.js"></script>
-<script src="funGrid/mainTitle/cardAction/universalChartTypeSection.js"></script>
+<script src="src/funGrid/mainTitle/extraStuffComponent.js"></script>
+<script src="src/funGrid/mainTitle/loginComponent.js"></script>
+<script src="src/funGrid/mainTitle/titleSortComponent.js"></script>
+<script src="src/funGrid/mainTitle/aboutUsComponent.js"></script>
+<script src="src/funGrid/mainTitle/mainTitle.js"></script>
+<script src="src/funGrid/mainTitle/indexDataComponent.js"></script>
+<script src="src/funGrid/mainTitle/cardAction/universalCardsActionWindow.js"></script>
+<script src="src/funGrid/mainTitle/cardAction/universalCardSizeSection.js"></script>
+<script src="src/funGrid/mainTitle/cardAction/universalSortSection.js"></script>
+<script src="src/funGrid/mainTitle/cardAction/universalRangeSection.js"></script>
+<script src="src/funGrid/mainTitle/cardAction/universalChartTypeSection.js"></script>
 
-<script src="funGrid/service/revertActionService.js"></script>
-<script src="funGrid/service/resizeService.js"></script>
-<script src="funGrid/service/dragAndDropService.js"></script>
-<script src="funGrid/service/removeCardService.js"></script>
-<script src="funGrid/service/expandToDrillService.js"></script>
+<script src="src/funGrid/service/revertActionService.js"></script>
+<script src="src/funGrid/service/resizeService.js"></script>
+<script src="src/funGrid/service/dragAndDropService.js"></script>
+<script src="src/funGrid/service/removeCardService.js"></script>
+<script src="src/funGrid/service/expandToDrillService.js"></script>
 
-<script src="common/textUtils.js"></script>
-<script src="common/shapesUtil.js"></script>
-<script src="charts/common/chartCommonUtil.js"></script>
-<script src="charts/common/chartFrameUtil.js"></script>
-<script src="charts/common/interactive/bottomDateTooltip.js"></script>
-<script src="charts/common/interactive/chartMarkUtil.js"></script>
-<script src="charts/common/interactive/trackLineUtil.js"></script>
-<script src="charts/common/interactive/interactiveComponent.js"></script>
+<script src="src/common/textUtils.js"></script>
+<script src="src/common/shapesUtil.js"></script>
+<script src="src/charts/common/chartCommonUtil.js"></script>
+<script src="src/charts/common/chartFrameUtil.js"></script>
+<script src="src/charts/common/interactive/bottomDateTooltip.js"></script>
+<script src="src/charts/common/interactive/chartMarkUtil.js"></script>
+<script src="src/charts/common/interactive/trackLineUtil.js"></script>
+<script src="src/charts/common/interactive/interactiveComponent.js"></script>
 
-<script src="common/costQty/costQtyComponent.js"></script>
-<script src="common/costQty/orderComponent.js"></script>
-<script src="common/costQty/orderWindowUtil.js"></script>
-<script src="cardComponent/simpleView.js"></script>
-<script src="cardComponent/valuePresentationUtil.js"></script>
-<script src="cardComponent/liveView/currentDataSection.js"></script>
-<script src="cardComponent/liveView/liveView.js"></script>
-<script src="cardComponent/statsView/statsView.js"></script>
-<script src="cardComponent/newsView/newsView.js"></script>
-<script src="cardComponent/studyView/studyView.js"></script>
+<script src="src/common/costQty/costQtyComponent.js"></script>
+<script src="src/common/costQty/orderComponent.js"></script>
+<script src="src/common/costQty/orderWindowUtil.js"></script>
+<script src="src/cardComponent/simpleView.js"></script>
+<script src="src/cardComponent/valuePresentationUtil.js"></script>
+<script src="src/cardComponent/liveView/currentDataSection.js"></script>
+<script src="src/cardComponent/liveView/liveView.js"></script>
+<script src="src/cardComponent/statsView/statsView.js"></script>
+<script src="src/cardComponent/newsView/newsView.js"></script>
+<script src="src/cardComponent/studyView/studyView.js"></script>
 
-<script src="charts/line/lineDrawUtil.js"></script>
-<script src="charts/line/lineChartPure.js"></script>
+<script src="src/charts/line/lineDrawUtil.js"></script>
+<script src="src/charts/line/lineChartPure.js"></script>
 
-<script src="charts/candle/candleStickElement.js"></script>
-<script src="charts/candle/candlesDrawUtil.js"></script>
+<script src="src/charts/candle/candleStickElement.js"></script>
+<script src="src/charts/candle/candlesDrawUtil.js"></script>
 
-<script src="charts/common/chartTypeButtons.js"></script>
-<script src="charts/common/chartTopTooltip.js"></script>
-<script src="charts/common/volumeSectionUtil.js"></script>
+<script src="src/charts/common/chartTypeButtons.js"></script>
+<script src="src/charts/common/chartTopTooltip.js"></script>
+<script src="src/charts/common/volumeSectionUtil.js"></script>
 
-<script src="charts/line/timeRangeSelector.js"></script>
-<script src="charts/line/mainMiniChart.js"></script>
-<script src="charts/miniCharts/indicatorMiniChart.js"></script>
-<script src="charts/line/lineChartCore.js"></script>
-<script src="charts/line/lineChartContainer.js"></script>
+<script src="src/charts/line/timeRangeSelector.js"></script>
+<script src="src/charts/line/mainMiniChart.js"></script>
+<script src="src/charts/miniCharts/indicatorMiniChart.js"></script>
+<script src="src/charts/line/lineChartCore.js"></script>
+<script src="src/charts/line/lineChartContainer.js"></script>
 
-<script src="components/stockAutoCompleteList.js"></script>
-<script src="components/symbolSearchBox.js"></script>
-<script src="components/pancakeDropdown.js"></script>
+<script src="src/components/stockAutoCompleteList.js"></script>
+<script src="src/components/symbolSearchBox.js"></script>
+<script src="src/components/pancakeDropdown.js"></script>
 
-<script src="charts/common/indicatorsUtil.js"></script>
-<script src="charts/compare/multiLineDrawUtil.js"></script>
-<script src="charts/compare/compareDataManager.js"></script>
-<script src="charts/compare/compareChartCore.js"></script>
-<script src="charts/compare/compareChartTopTip.js"></script>
+<script src="src/charts/common/indicatorsUtil.js"></script>
+<script src="src/charts/compare/multiLineDrawUtil.js"></script>
+<script src="src/charts/compare/compareDataManager.js"></script>
+<script src="src/charts/compare/compareChartCore.js"></script>
+<script src="src/charts/compare/compareChartTopTip.js"></script>
 
-<script src="funGrid/fillVoid/fillGridVoidService.js"></script>
-<script src="funGrid/fillVoid/instructionCard.js"></script>
+<script src="src/funGrid/fillVoid/fillGridVoidService.js"></script>
+<script src="src/funGrid/fillVoid/instructionCard.js"></script>
 
-<script src="drill/chart/multiTooltipComponent.js"></script>
-<script src="drill/chart/drillChartArea.js"></script>
-<script src="drill/bottomSection/drillBottomSection.js"></script>
-<script src="drill/chart/chartAction/drillChartTop.js"></script>
-<script src="drill/chart/chartAction/drillCompareSection.js"></script>
-<script src="drill/chart/chartAction/selectSymbolSearchBox.js"></script>
-<script src="drill/chart/chartAction/indicatorSelectionWindow.js"></script>
-<script src="drill/chart/chartAction/indicatorSection.js"></script>
-<script src="drill/chart/chartAction/indicatorSelection.js"></script>
-<script src="drill/chart/zoomableChart.js"></script>
-<script src="drill/data/drillDataManager.js"></script>
-<script src="drill/drillWindow.js"></script>
+<script src="src/drill/chart/multiTooltipComponent.js"></script>
+<script src="src/drill/chart/drillChartArea.js"></script>
+<script src="src/drill/bottomSection/drillBottomSection.js"></script>
+<script src="src/drill/chart/chartAction/drillChartTop.js"></script>
+<script src="src/drill/chart/chartAction/drillCompareSection.js"></script>
+<script src="src/drill/chart/chartAction/selectSymbolSearchBox.js"></script>
+<script src="src/drill/chart/chartAction/indicatorSelectionWindow.js"></script>
+<script src="src/drill/chart/chartAction/indicatorSection.js"></script>
+<script src="src/drill/chart/chartAction/indicatorSelection.js"></script>
+<script src="src/drill/chart/zoomableChart.js"></script>
+<script src="src/drill/data/drillDataManager.js"></script>
+<script src="src/drill/drillWindow.js"></script>
 
-<script src="charts/ultimate/ultimateChartDataManager.js"></script>
-<script src="charts/ultimate/ultimateMegaChart.js"></script>
-<script src="charts/common/zoom/zoomUtil.js"></script>
-<script src="charts/ultimate/rangeSelectorUltimate.js"></script>
-<script src="charts/ultimate/topBar/toolBarUltimate.js"></script>
-<script src="charts/ultimate/topBar/actionSelectorUltimate.js"></script>
+<script src="src/charts/ultimate/ultimateChartDataManager.js"></script>
+<script src="src/charts/ultimate/ultimateMegaChart.js"></script>
+<script src="src/charts/common/zoom/zoomUtil.js"></script>
+<script src="src/charts/ultimate/rangeSelectorUltimate.js"></script>
+<script src="src/charts/ultimate/topBar/toolBarUltimate.js"></script>
+<script src="src/charts/ultimate/topBar/actionSelectorUltimate.js"></script>
 
 
-<script src="charts/ultimate/topBar/compareSectionUltimate.js"></script>
-<script src="charts/ultimate/topBar/indicatorSectionUltimate.js"></script>
-<script src="charts/ultimate/topBar/profitSectionUltimate.js"></script>
+<script src="src/charts/ultimate/topBar/compareSectionUltimate.js"></script>
+<script src="src/charts/ultimate/topBar/indicatorSectionUltimate.js"></script>
+<script src="src/charts/ultimate/topBar/profitSectionUltimate.js"></script>
 
-<script src="charts/bar/barChartCore.js"></script>
-<script src="charts/bar/barDrawUtil.js"></script>
-<script src="charts/common/interactive/barChartMarkUtil.js"></script>
+<script src="src/charts/bar/barChartCore.js"></script>
+<script src="src/charts/bar/barDrawUtil.js"></script>
+<script src="src/charts/common/interactive/barChartMarkUtil.js"></script>
 
-<script src="cardComponent/aggrCard/aggrView.js"></script>
-<script src="cardComponent/aggrCard/aggHistoryView/aggrHistoryChart.js"></script>
-<script src="cardComponent/aggrCard/aggHistoryView/aggrHistoryView.js"></script>
-<script src="cardComponent/aggrCard/aggrLiveView/aggrLiveView.js"></script>
-<script src="cardComponent/aggrCard/aggrLiveView/aggrChangeSection.js"></script>
-<script src="cardComponent/aggrCard/common/aggrDataManager.js"></script>
-<script src="charts/pie/pieChart.js"></script>
-<script src="charts/pie/pieCalculationHelper.js"></script>
-<script src="charts/pie/pieConstructorUtil.js"></script>
-<script src="charts/pie/pieChartComplete.js"></script>
-<script src="charts/pie/pieLegend.js"></script>
-<script src="charts/pie/pieTooltipUtil.js"></script>
+<script src="src/cardComponent/aggrCard/aggrView.js"></script>
+<script src="src/cardComponent/aggrCard/aggHistoryView/aggrHistoryChart.js"></script>
+<script src="src/cardComponent/aggrCard/aggHistoryView/aggrHistoryView.js"></script>
+<script src="src/cardComponent/aggrCard/aggrLiveView/aggrLiveView.js"></script>
+<script src="src/cardComponent/aggrCard/aggrLiveView/aggrChangeSection.js"></script>
+<script src="src/cardComponent/aggrCard/common/aggrDataManager.js"></script>
+<script src="src/charts/pie/pieChart.js"></script>
+<script src="src/charts/pie/pieCalculationHelper.js"></script>
+<script src="src/charts/pie/pieConstructorUtil.js"></script>
+<script src="src/charts/pie/pieChartComplete.js"></script>
+<script src="src/charts/pie/pieLegend.js"></script>
+<script src="src/charts/pie/pieTooltipUtil.js"></script>
 
-<script src="funGrid/twitter/twitterUtil.js"></script>
-<script src="funGrid/twitter/twitterEmbedHelper.js"></script>
+<script src="src/funGrid/twitter/twitterUtil.js"></script>
+<script src="src/funGrid/twitter/twitterEmbedHelper.js"></script>
 
-<script src="funGrid/util/DragAndDropScrollManager.js"></script>
+<script src="src/funGrid/util/DragAndDropScrollManager.js"></script>
 <!-- endbuild -->
 
 
