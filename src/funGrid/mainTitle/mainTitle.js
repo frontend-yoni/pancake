@@ -547,7 +547,7 @@ function MainTitle() {
 
     function onStartFreshClick() {
         activateStartFresh();
-        revertActionService.showMessage("Deleted All", revertStartFresh, 200);
+        revertActionService.showMessage("Deleted All", revertStartFresh, 220);
     }
 
     function onExtraStuffButtonClick() {
