@@ -6,7 +6,7 @@ function RevertActionService() {
     //Constants
     var UNDO_MESSAGE_DURATION = 2500;
     var MESSAGE_AREA_HEIGHT = 30;
-    var UNDO_BUBBLE_WIDTH = 255;
+    var UNDO_BUBBLE_WIDTH = 245;
 
     //Layout
     //Color
